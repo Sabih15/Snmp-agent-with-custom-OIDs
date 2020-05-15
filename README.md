@@ -27,7 +27,7 @@ After writing agent, it was executed with sudo command 'sudo python3 agent.py' a
 * postgres
 * pysnmp, psycopg2-binary, mibdump, libsmi
 
-#HOW TO SETUP SNMP AND MIB ON LOCAL MACHINE##
+### HOW TO SETUP SNMP AND MIB ON LOCAL MACHINE
 1. Update packages using sudo apt-get update.
 2. Install the snmp software using command 'sudo apt install snmp'.
 3. Install the snmp-libs-downloader using command 'sudo apt install 'snmp-mibs-downloader'.
