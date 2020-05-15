@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS snmpSignals(id SERIAL PRIMARY KEY,signalValue varchar(20) NOT NULL,signalTime TIME  NOT NULL);INSERT INTO snmpSignals(signalValue, signalTime) VALUES('25x6','03:00:00'),('16d3','11:00:00'),('66s1','22:00:00'),('4f44','15:00:23')

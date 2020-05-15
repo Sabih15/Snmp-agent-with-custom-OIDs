@@ -1,0 +1,36 @@
+SABIH-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+        OBJECT-TYPE, Integer32, NOTIFICATION-TYPE, enterprises
+                     FROM SNMPv2-SMI
+;
+
+afiniti       OBJECT IDENTIFIER ::= {enterprises 53864}
+
+logSize OBJECT-TYPE
+    SYNTAX Integer32
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "This is log size."
+    ::= {afiniti 1}
+    
+signalValue OBJECT-TYPE
+    SYNTAX OCTET STRING
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "This comes from database"
+    ::= {afiniti 2}
+
+versionNo OBJECT-TYPE
+    SYNTAX OCTET STRING
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "This is version number"
+    ::= {afiniti 3}
+
+testTrap NOTIFICATION-TYPE
+    STATUS current
+    DESCRIPTION "Test notification"
+    ::= {afiniti 3}
+
+END
