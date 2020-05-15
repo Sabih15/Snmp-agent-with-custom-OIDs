@@ -1,6 +1,6 @@
 This ReadMe file contains the methodology used to complete the task, time taken to complete the task and the list of dependencies.
 
-## METHODOLOGY
+## Methodology
 For the tasks I opted for **Ubuntu 20.04** to remove the dependencies intricacies with **SNMP** and wrote a custom agent in **Python3** using **pysnmp** package, which then exposes custom written MIB to *SNMP Manager*.
  
  Install required packages and dependencies  
@@ -35,12 +35,12 @@ Now query the agent using manager machine, the real mojo happens here for OID 1
 
 response time was ~0.06seconds (place complied mib.py file in the directory same as agent).
 
-## TIME CONSUMPTION
+## Time Consumption
 * A day was consumed in downloading and installing virtualbox and ubuntu. 
 * 3 days were utilized in reading and grasping the concept and understanding how to implement a custom snmp-agent and OID. 
 * 2 days was used in coding the agent and writing MIB file.
 
-## PROBLEMS FACED
+## Problems Faced
  * First tried to extend the net-snmp agents but failed as no proper documentation could be found.
  * There were different formats for MIB file so finding the correct one was exhausting.
  * Faced difficulty in compiling Mib file using build-pysnmp-mib, later read that it has gone obsolete.
